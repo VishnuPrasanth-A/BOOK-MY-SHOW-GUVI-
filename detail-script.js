@@ -11,11 +11,11 @@ window.onload = async () => {
 async function fetchMovieDetails(movieId) {
   try {
     const response = await fetch(
-      `https://bookmyshow-backend-guvi.onrender.com/movie/${movieId}`
+      `https://learn-with-guvi-book-my-show-backend.onrender.com/movie/${movieId}`
     );
     const movie = await response.json();
 
-    // \\Object.entries(movie.shows).flatMap(([date,showtime]) => {
+    // Object.entries(movie.shows).flatMap(([date,showtime]) => {
     //     console.log(date),
     //     showtime.map((show) => {
     //         console.log(show)
